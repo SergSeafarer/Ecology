@@ -82,7 +82,7 @@
   row-gap: 25px;
 }
 
-input:checked + div.weight {
+input:checked + span.weight {
   border: 1px solid #3ECF5E;
   border-radius: 5px;
   background-color: #FFFFFF;
