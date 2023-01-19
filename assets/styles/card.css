@@ -132,3 +132,36 @@ input:checked + div.weight {
   margin-top: 44px;
   margin-bottom: 50px;
 }
+
+.pages-links {
+  text-align: center;
+}
+
+.pages {
+  padding-right: 20px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #828282;
+}
+
+.pages:last-of-type {
+  padding-right: 0;
+}
+
+.active-page {
+  color: #219653;
+  font-weight: 700;
+}
+
+.pages:first-of-type::before {
+  content: url(../images/left\ arrow.png);
+  padding-right: 30px;
+}
+
+.pages:last-of-type::after {
+  content: url(../images/right-arrow.png);
+  padding-left: 30px;
+}
