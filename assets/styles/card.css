@@ -1,0 +1,41 @@
+.cards {
+  padding-top: 75px;
+  padding-bottom: 100px;
+  background-color: #E5E5E5;
+}
+
+.bullet-links {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
+.bullet-links::before {
+  content: url(../images/bullet.png);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.bullet-links:first-of-type::before {
+  content: none;
+}
+
+.bullet {
+  margin-bottom: 30px;
+}
+
+.arrow-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #333333;
+  text-decoration: none;
+}
+
+.arrow-link::before {
+  content: url(../images/arrow-green.png);
+  padding-right: 11px;
+  padding-left: 6px;
+}
