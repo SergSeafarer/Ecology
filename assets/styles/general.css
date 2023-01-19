@@ -1,0 +1,16 @@
+@import url(./normalize.css);
+@import url(../fonts/Gilroy/stylesheet.css);
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
