@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(../fonts/Gilroy/stylesheet.css);
+@import url(../fonts/Roboto/stylesheet.css);
 
 * {
   box-sizing: border-box;
