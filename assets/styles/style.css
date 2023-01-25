@@ -16,11 +16,15 @@ footer {
 
 .socials {
   text-decoration: none;
-  padding-right: 20px;
+  margin-right: 20px;
+}
+
+.social-link {
+  display: flex;
 }
 
 .socials:last-of-type {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .number {

@@ -63,23 +63,28 @@ header {
   border: none;
   outline: none;
   background-color: #F2F2F2;
-  padding: 0;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 0;
+  border-radius: 10px;
+  width: 293px;
 }
 
 .search-button {
-  display: flex;
+  position: absolute;
+  left: 295px;
+  top: 16px;
   border: none;
   background-color: transparent;
-  padding: 0;
+  padding: 2px 3px 4px 2px;
 }
 
 .search {
   display: flex;
-  align-items: center;
+  position: relative;
   background: #F2F2F2;
   border: 1px solid #BDBDBD;
   border-radius: 10px;
   width: 345px;
-  justify-content: space-between;
-  padding: 10px 20px;
 }
