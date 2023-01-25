@@ -46,7 +46,7 @@ header {
   font-weight: 500;
   color: #4F4F4F;
   text-decoration: none;
-  padding-right: 40px;
+  margin-right: 40px;
 }
 
 .navigation-link:last-of-type {

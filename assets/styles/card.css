@@ -13,9 +13,14 @@
 }
 
 .bullet-links::before {
-  content: url(../images/bullet.png);
-  padding-left: 15px;
-  padding-right: 15px;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #BDBDBD;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .bullet-links:first-of-type::before {
@@ -102,7 +107,7 @@ input:checked + span.weight {
 .submit {
   display: flex;
   align-items: center;
-  gap: 65px;
+  justify-content: space-between;
 }
 
 .details {
