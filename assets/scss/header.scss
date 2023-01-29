@@ -1,0 +1,90 @@
+header {
+  background-color: #FFFFFF;
+  padding-top: 33px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+  align-items: center;
+}
+
+.logo-links {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.phone {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.bin {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-link {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #4F4F4F;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.navigation-link:last-of-type {
+  padding-right: 0;
+}
+
+.arrow-element::after {
+  content: url(../images/arrow-down.png);
+  padding-left: 7px;
+  padding-right: 3px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background-color: #F2F2F2;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 0;
+  border-radius: 10px;
+  width: 293px;
+}
+
+.search-button {
+  position: absolute;
+  left: 295px;
+  top: 16px;
+  border: none;
+  background-color: transparent;
+  padding: 2px 3px 4px 2px;
+}
+
+.search {
+  display: flex;
+  position: relative;
+  background: #F2F2F2;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  width: 345px;
+}
