@@ -418,6 +418,46 @@ header {
   width: 345px;
 }
 
+.back {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #333333;
+}
+.back::before {
+  content: url(../images/arrow-green.png);
+  padding-left: 6px;
+  padding-right: 7px;
+}
+
+.bin-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #BDBDBD;
+  text-decoration: none;
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.form {
+  padding-top: 50px;
+  padding-bottom: 169px;
+  background-color: #E5E5E5;
+}
+
+fieldset {
+  border: none;
+}
+
+.bin-content {
+  background: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-radius: 10px;
+}
+
 footer {
   padding-top: 100px;
   padding-bottom: 130px;
