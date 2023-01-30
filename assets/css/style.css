@@ -323,6 +323,10 @@ body {
   font-family: "Gilroy", sans-serif;
 }
 
+input, button {
+  font-family: "Gilroy", sans-serif;
+}
+
 header {
   background-color: #FFFFFF;
   padding-top: 33px;
