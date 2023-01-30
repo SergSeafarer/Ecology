@@ -6,6 +6,12 @@
   line-height: $lh;
 }
 
+@mixin button($bg, $bd, $br) {
+  background-color: $bg;
+  border: $bd;
+  border-radius: $br;
+}
+
 .back {
   text-decoration: none;
   @include font(20px, 500, 24px);
@@ -34,10 +40,163 @@
 
 fieldset {
   border: none;
+  padding: 0;
+  margin-left: v.$defaultMargin;
+  margin-right: v.$defaultMargin;
 }
 
 .bin-content {
   background: #FFFFFF;
   border: 1px solid #F2F2F2;
   border-radius: 10px;
+  padding-bottom: 159px;
+  position: relative;
+}
+
+.cards-content {
+  padding: 25px 25px 27px;
+  border-bottom: 1px solid #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.description {
+  display: flex;
+}
+
+.title {
+  margin-left: 15px;
+  & .description-title {
+    margin-top: v.$defaultMargin;
+    margin-bottom: v.$defaultMargin;
+    @include font(24px, 600, 29px);
+    color: #333333;
+  }
+  
+  & .simple-text {
+    margin-top: 9px;
+    margin-bottom: 52px;
+    @include font(v.$defaultFontSize, v.$defaultFontWeight, v.$defaultLineHeight);
+    color: v.$lightGreyColor;
+  }
+}
+
+.price {
+  margin-top: v.$defaultMargin;
+  margin-bottom: v.$defaultMargin;
+  @include font(24px, 600, 29px);
+  color: #333333;
+
+  & span {
+    @include font(24px, v.$defaultFontWeight, 28px);
+    color: #828282;
+  }
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  & .simple-text {
+    margin-top: v.$defaultMargin;
+    margin-bottom: v.$defaultMargin;
+    @include font(v.$defaultFontSize, v.$defaultFontWeight, v.$defaultLineHeight);
+    color: v.$lightGreyColor;
+  }
+
+  & input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 0;
+    @include font(24px, 600, 29px);
+
+    &::-webkit-inner-spin-button,
+      ::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+  }
+}
+
+.quantity-adjust {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  & .minus {
+    @include button(transparent, 1px solid #00C620, 5px);
+    display: flex;
+    align-items: center;
+    padding: 15px 9px;
+  }
+
+  & .plus {
+    @include button(transparent, 1px solid #00C620, 5px);
+    display: flex;
+    align-items: center;
+    padding: 9px;
+  }
+}
+
+.total-price {
+  margin-top: v.$defaultMargin;
+  margin-bottom: v.$defaultMargin;
+  @include font(24px, 600, 29px);
+
+  & span {
+    @include font(24px, 500, 28px);
+    color: #828282;
+  }
+}
+
+.donation {
+  background-color: #3FCF5E;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  padding-left: 171px;
+}
+
+.donation-title {
+  @include font(24px, 600, 29px);
+  color: #FFFFFF;
+  margin-top: v.$defaultMargin;
+  margin-bottom: 33px;
+}
+
+.donation input {
+    @include font(v.$defaultFontSize, v.$defaultFontWeight, v.$defaultLineHeight);
+    color: #4F4F4F;
+    width: 234px;
+    padding: 15px;
+    outline: none;
+    margin-right: 20px;
+    @include button(rgba(255, 255, 255, 0.7), 1px solid #FFFFFF, 10px);
+
+    &::-webkit-inner-spin-button,
+     ::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+    }
+}
+
+.confirm {
+  @include button(#FFFFFF, none, 10px);
+  padding: 15px 40px;
+  @include font(v.$defaultFontSize, v.$defaultFontWeight, v.$defaultLineHeight);
+  color: #333333;
+}
+
+.pay {
+  position: absolute;
+  bottom: 60px;
+  right: 25px;
+  @include button(#3FCF5E, none, 10px);
+  @include font(16px, 600, 19px);
+  color: #FFFFFF;
+  padding: 15px 67px;
 }
