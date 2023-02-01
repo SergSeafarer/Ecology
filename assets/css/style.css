@@ -459,8 +459,7 @@ fieldset {
   background: #FFFFFF;
   border: 1px solid #F2F2F2;
   border-radius: 10px;
-  padding-bottom: 159px;
-  position: relative;
+  padding-bottom: 60px;
 }
 
 .cards-content {
@@ -478,6 +477,8 @@ fieldset {
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
   margin-left: 15px;
 }
 .title .description-title {
@@ -490,7 +491,7 @@ fieldset {
 }
 .title .simple-text {
   margin-top: 9px;
-  margin-bottom: 52px;
+  margin-bottom: auto;
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
@@ -585,6 +586,7 @@ fieldset {
 }
 
 .donation-title {
+  display: flex;
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
@@ -622,10 +624,13 @@ fieldset {
   color: #333333;
 }
 
-.pay {
-  position: absolute;
-  bottom: 60px;
-  right: 25px;
+.pay-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25px;
+  padding-top: 50px;
+}
+.pay-button .pay {
   background-color: #3FCF5E;
   border: none;
   border-radius: 10px;

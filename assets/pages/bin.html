@@ -54,8 +54,8 @@
       <div class="wrapper">
         <a href="" class="back">Назад</a>
         <a href="" class="bin-link">Корзина</a>
-        <form class="bin-content">
-          <fieldset class="form-cards">
+        <div class="bin-content">
+          <div class="form-cards">
             <div class="cards-content">
               <div class="description">
                 <img src="../images/feed.jpg" alt="фото корма" width="129" height="140">
@@ -188,20 +188,26 @@
                 </p>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="donation">
-            <h3 class="donation-title">
-              Сделайте пожертвование в наш фонд
-            </h3>
-            <input type="number" name="donation" placeholder="Введите сумму">
-            <button type="button" class="confirm">
-              Пожертвовать
+          </div>
+          <div class="donation">
+            <form>
+              <label for="donation-input" class="donation-title">
+                Сделайте пожертвование в наш фонд
+              </label>
+              <div>
+                <input type="number" name="donation" id="donation-input" placeholder="Введите сумму">
+                <button type="button" class="confirm">
+                  Пожертвовать
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="pay-button">
+            <button class="pay" type="submit">
+              Оплатить
             </button>
-          </fieldset>
-          <button class="pay" type="submit">
-            Оплатить
-          </button>
-        </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
